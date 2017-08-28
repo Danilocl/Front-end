@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Data</title>
+
+	<script type="text/javascript">
+	var arrayDia = new Array(7);
+	arrayDia[0] = "Domingo";
+	arrayDia[1] = "Segunda";
+	arrayDia[2] = "terça";
+	arrayDia[3] = "Quarta";
+	arrayDia[4] = "Quinta";
+	arrayDia[5] = "Sexta";
+	arrayDia[6] = "Sabado";
+
+	var arrayMes = new Array(12);
+	arrayMes[0] = "Janeiro";
+	arrayMes[1] = "Fevereiro";
+	arrayMes[2] = "Março";
+	arrayMes[3] = "Abril";
+	arrayMes[4] = "Maio";
+	arrayMes[5] = "Junho";
+	arrayMes[6] = "Julho";
+	arrayMes[7] = "Agosto";
+	arrayMes[8] = "Setembro";
+	arrayMes[9] = "Outubro";
+	arrayMes[10] = "Novembro";
+	arrayMes[11] = "Dezembro";
+
+	function getDia(dia) {
+
+		return this.arrayDia[dia];
+	}
+
+	function getMes(mes) {
+
+	return this.arrayMes[mes];
+
+	}
+
+	function atualizaData() {
+		var data = new Date();
+		var dia = data.getDate();
+		var diaSemana = getDia(data.getDay());
+		var mes = getMes(data.getMonth());
+		var ano = data.getFullYear();
+		monstrardata(dia,diaSemana,mes,ano);
+	}
+
+	function monstrardata(dia,diaSemana,mes,ano) {
+		str = "" + diaSemana + ", " + dia + " de " + mes + " de " + ano;
+		document.getElementById("showdate").innerHTML = str;
+	}	
+
+	</script>
+
+</head>
+<body>
+
+	<div id="showdate"></div>
+	<input type="button" id="id_data" onclick="return atualizaData();" value="Mostrar Data">
+	
+</body>
+</html>
