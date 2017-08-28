@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Revisão Javascript</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var arrayDia = new Array(7);
+		arrayDia[0] = "Domingo";
+		arrayDia[1] = "Segunda";
+		arrayDia[2] = "Terça";
+		arrayDia[3] = "Quarta";
+		arrayDia[4] = "Quinta";
+		arrayDia[5] = "Sexta";
+		arrayDia[6] = "Sábado";
+
+		var arrayMes = new Array(12);
+		arrayMes[0] = "Janeiro";
+		arrayMes[1] = "Fevereiro";
+		arrayMes[2] = "Março";
+		arrayMes[3] = "Abril";
+		arrayMes[4] = "Maio";
+		arrayMes[5] = "Junho";
+		arrayMes[6] = "Julho";
+		arrayMes[7] = "Agosto";
+		arrayMes[8] = "Setembro";
+		arrayMes[9] = "Outubro";
+		arrayMes[10] = "Novembro";
+		arrayMes[11] = "Dezembro";
+
+		function atualizarDataHora(){
+			var data = new Date();			
+			var diaSemana = getDiaExtenso(data.getDay());
+			var dia = data.getDate();
+			var mes = getMesExtenso(data.getMonth());
+			var ano = data.getFullYear();
+			mostrarDataHora(diaSemana, dia, mes, ano);
+		}
+		function getMesExtenso(mes) {
+			return this.arrayMes[mes];
+		}
+		function getDiaExtenso(dia) {
+			return this.arrayDia[dia];
+		}
+		function mostrarDataHora(diaSemana, dia, mes, ano){
+			str = "" + diaSemana + ", " + dia + " de " + mes + " de " + ano;
+			document.getElementById("dataAtual").innerHTML = str;
+		}
+	</script>
+</head>
+<body>
+	<div id="dataAtual"></div>
+	<input type="button" name="btData" value="Mostra Data" onclick="return atualizarDataHora()">
+</body>
+</html>

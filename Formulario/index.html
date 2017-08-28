@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela de Formulário</title>
+	</head>
+	<body>
+		<h1>Formulário de Contato</h1>
+		<form name="formNovo" onsubmit="return dados()" action="sucesso.html">
+			<fieldset>
+				<legend>Identificação de Contato</legend>
+				</br>			
+					<label for="nome" name="labelNome">Nome</label>
+					<input id="id_nome" type="text" name="nome">
+					</br>
+					</br>
+					<label>E-mail</label>
+					<input type="email" id="id_email" name="email">
+					</br>
+					</br>
+					<fieldset>
+						<legend>Sexo</legend>
+						</br>
+							<input type="radio"><label>Maculino</label>
+							</br>
+							<input type="radio"><label>Feminino</label>
+					</fieldset>
+						</br>
+						<label>Data de Nascimento</label>
+						<input type="date">
+			</fieldset>
+			<fieldset>
+				<legend>Endereço de Contato</legend>
+				</br>
+					<label>Rua</label>
+					<input type="text" name="rua" size="120" placeholder="Rua, Av, Trav, ...">
+					</br>
+					</br>
+					<label>Número</label>
+					<input type="text" size="5">
+					</br>
+					</br>
+					<label>Complemento</label>
+					<input type="text" size="120">
+					</br>
+					</br>
+					<label>Estado</label>
+					<select>	
+						<optgroup label="Região">
+							<option value="Rio de Janeiro">Rio de Janeiro</option>
+							<option value="São Paulo">São Paulo</option>
+						</optgroup>
+						<option value="Espirito Santo">Espírito Santo</option>
+						<option value="Brasilia">Brasilia</option>
+					</select>
+					</br>
+					</br>
+					<label>Cidade</label>
+					<input type="text" name="Cidade" size="40" placeholder="Sua Cidade" list="cidades">
+					<datalist id="cidades">
+						<option value="Rio de Janeiro"></option>
+						<option value="Nova Iguaçu"></option>
+						<option value="Niterói"></option>
+						<option value="São João de Meriti"></option>
+					</datalist>
+			</fieldset>
+			<fieldset>
+				<legend>Mensagem de Contato</legend>
+				</br>
+					<label>Grau de Urgencia</label>
+					<input type="range" min="0" max="10" step="2">
+					</br>
+					</br>
+					<label>Mensagem</label>
+					</br>
+					<textarea rows="4" cols="50" placeholder="Deixe aqui sua mensagem..."></textarea>
+					</br>
+					</br>
+					
+			</fieldset>
+			<input type="submit" value="Enviar">
+		</form>
+		</br>
+		<input type="button" value="Valida formulário" name="btvalida" onclick="formulario()"/>
+		<script type="text/javascript">
+			
+			function formulario(){
+				var x = document.forms["formNovo"]["rua"].value;
+				alert("Rua: " + x)
+			}
+
+			function dados(){
+				var control = true;
+				if(document.getElementById("id_nome").value == ''){
+					alert("Por favor, preencha o campo nome.")
+					document.getElementById("id_nome").focus();
+					control = false;
+				} else if (document.getElementById("id_email").value.search('@') == -1) {
+					alert('Por favor, digite um email válido.');
+					document.getElementById("id_email").focus();
+					control = false;
+				};
+				return control;
+			}
+		</script>
+	</body>
+
+</html>
