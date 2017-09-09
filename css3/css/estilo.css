@@ -1,0 +1,16 @@
+#box {
+	width: 300px;
+	height: auto;
+	background: #b9c941;
+	padding: 20px 50px 80px 100px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+	/*prefixo usado em versoesanteriores do chrome
+	-webkit-border-radius: 20px;
+	prefixo usado em versoesanteriores do firefox
+	-moz-border-radius: 20px;
+	*/
+	
+}

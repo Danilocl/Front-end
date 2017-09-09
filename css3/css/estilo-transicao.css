@@ -1,0 +1,22 @@
+
+#box-transicao {
+	
+	height: 300px;
+	width: 300px;
+	margin-left: 400px;
+	margin-top: 130px;
+	background: orange;
+}
+
+#box-transicao:hover {
+	background: green;
+	width: 400px;
+	height: 400px;
+	border-radius: 300px;
+	text-decoration: line-through;
+	font-size: 50px;
+
+	/*transition: background 3s,width 8s,height 8s,border-radius 8s;*/
+	transition: all 2s;
+}
+

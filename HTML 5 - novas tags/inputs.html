@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title></title>
+</head>
+
+<body>
+	
+	<form>
+	
+
+	<label for="nome">Nome:</label>	
+	<input type="text" id="nome">
+	<br><br/>
+	
+	<!--atributo required: para tornar o preenchimento obrigatório!-->
+	<!-- autofocus: retorna o foco para o input !-->
+	<label for="email">E-mail:</label>	
+	<input type="email" id="email" required autofocus>
+	<br><br/>
+
+	<label for="numero">Número:</label>	
+	<input type="number" id="numero" min="5" max="10" step="2" required>
+	<br><br/>
+
+	<label for="url">Url:</label>	
+	<input type="url" id="url" placeholder="http://www.google.com.br" required>
+	<br><br/>
+
+	<label for="pesquisa">Pesquisa:</label>	
+	<input type="search" id="pesquisa" placeholder="ex: digite algo">
+	<br><br/>
+	
+	<!--value faz com que comece aprtir de 5!-->
+	<label for="range">Range:</label>	
+	<input type="range" id="range" min="1" max="10" value="5">
+	<br><br/>
+
+	<label for="data">Data:</label>	
+	<input type="date" id="data">
+	<br><br/>
+	
+	<label for="cor" value="cor">Cor:</label>
+	<input type="color" id="cor">
+	<br><br/>
+
+	<input type="submit" value="Enviar">
+	
+	</form>
+
+</body>
+
+</html>
