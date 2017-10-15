@@ -1,8 +1,13 @@
 Batman
 
 Flash
+<<<<<<< HEAD
 
 Dr Manhatam
 
 Scott Pilgrim
 New
+=======
+Dr Manhatam
+Scott Pilgrim
+>>>>>>> 0fd016e7b4b201c6245639e002280a434818e9f8

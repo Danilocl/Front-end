@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navegação</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!--Deixa a barra responsiva-->  
+				<button type="button" class="navbar-toggle collapsed" 
+						data-toggle="collapse" data-target="#barra-navegacao">		
+					<!--Cria os traços na barra responsiva-->  
+					<span class="sr-only">Alternar Menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>	
+				
+				</button>
+				
+				<a href="#" class="navbar-brand">Logo</a>
+
+			</div>
+
+			<div class="collapse navbar-collapse" id="barra-navegacao">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Empresa</a></li>
+					<li><a href="#">Clientes</a></li>
+					<li><a href="#">Produto</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdawn-toggle" data-toggle="dropdown">
+						Minha Conta<spam class="caret"></spam></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Editar</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+	<div class="page-header">
+		<h1>Navegação Bootstrap</h1>
+	</div>
+</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

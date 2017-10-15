@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Alert</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!--Usada em textos no top da pagina, insere uma linha-->
+		<div class="page-header">
+			<h1>Classes de alerts do bootstrap</h1>			
+		</div>
+
+		<!--Define a cor do alerta. "role" acessibilidade-->
+	<div class="alert alert-info" role="alert">
+		<strong>Testando o alerta</strong>
+			<!--"close" estiliza o x."data-dismiss" faz com que o alert feche."aria-label" acessibilidade-->
+			<button class="close" data-dismiss="alert" aria-label="Fechar">
+				<!--Cria o x-->
+				<span aria-hidden="true">&times;</span>
+			</button>
+	</div>
+
+	<!--Define a cor do alerta-->
+	<div class="alert alert-success">
+		<strong>Testando o alerta</strong>
+			<button class="close" data-dismiss="alert" aria-label="Fechar">
+				<span aria-hidden="true">&times;</span>
+			</button>
+	</div>
+
+	<!--Define a cor do alerta-->
+	<div class="alert alert-warning">
+		<strong>Testando o alerta</strong>
+			<button class="close" data-dismiss="alert" aria-label="Fechar">
+				<span aria-hidden="true">&times;</span>
+			</button>
+	</div>
+
+	<!--Define a cor do alerta-->
+	<div class="alert alert-danger">
+		<strong>Testando</strong> o alerta
+			<button class="close" data-dismiss="alert" aria-label="Fechar">
+				<span aria-hidden="true">&times;</span>
+			</button>
+	</div>
+
+</div>
+	
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</html>
