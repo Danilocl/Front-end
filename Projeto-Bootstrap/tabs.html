@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Bootstrap</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">    
+  
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Bootstrap tabs</h1>
+        <p class="lead">Alterne facilmente entre contúdos</p>
+      </div>
+
+      <!-- "role" acessibilidade-->
+      <!--criação das abas-->
+      <!--nav-pills-->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#info" role="tab" data-toggle="tab">Informações</a></li>
+        <li ><a href="#avaliacao" role="tab" data-toggle="tab">Avaliações</a></li>
+        <li><a href="#buy" role="tab" data-toggle="tab">Compre também</a></li>
+      </ul>
+
+      <!--conteudo das abas-->
+
+      <div class="tab-content">
+        
+        <div class="tab-pane active" role="tabpanel" id="info">
+          <!--aba informações-->
+          <h3>Informções</h3>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        </div>
+
+        <!--aba avaliações-->
+        <div class="tab-pane" role="tabpanel" id="avaliacao">
+          <h3>Avaliações</h3>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        </div>
+
+        <!--aba compre também-->
+        <div class="tab-pane" role="tabpanel" id="buy">
+          <h3>Compre Também</h3>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        </div>
+      </div>
+
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
